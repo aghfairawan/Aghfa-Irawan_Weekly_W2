@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bang Do FanBoy</title>
+    <link rel="icon"
+        href="cr7.png"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <nav>
+        <span class="mobile">
+            <img src="https://user-images.githubusercontent.com/2970318/209647125-dc41103d-c545-4e2e-b89b-099fbfcde702.svg"
+                alt="Hamburger Icon" /></span>
+        <span class="icon-img">
+            <img src="cr7.png" alt="cr 7 icon">
+            <b>Bang DODO FanBoy</b>
+            <span class="circle-red">99+</span>
+        </span>
+
+        <span id="dark-mode-switch">
+            <p>Dark Mode</p>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            <!-- <label class="switch">
+                <input id="checkbox-dark-mode" onchange="toggleDarkmode()" type="checkbox">
+                <span class="slider round">
+                    
+                </span>
+            </label> -->
+        </span>
+
+        <!-- <ul class="nav-bar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul> -->
+    </nav>
+    <header class="full-screen" id="header">
+        <h1>Bang DO Photo APP, SIUUUUUUU!!!!</h1>
+        <p>This is an app about the most valuable player all the time</p>
+    </header>
+
+    <main>
+        <section id="bangdo-photos">
+            <h2>Bang DODO Photos</h2>
+            <div class="grid-container">
+                <div class="bangdo-photo-item" id="item-1">
+                    <img src="ucl1.png" alt="Bang Do winning first ucl">
+                </div>
+                <div class="bangdo-photo-item" id="item-2">
+                    <img src="ucl2.png" alt="Bang Do winning second ucl">
+                </div>
+                <div class="bangdo-photo-item" id="item-3">
+                    <img src="ucl3.png" alt="Bang Do winning third ucl">
+                </div>
+                <div class="bangdo-photo-item" id="item-4">
+                    <img src="ucl5.png" alt="Bang Do win five ucl">
+                </div>
+                <div class="bangdo-photo-item" id="item-5">
+                    <img src="siu2.png" alt="siu celebration">
+                </div>
+            </div>
+        </section>
+        <section id="bangdo-fact">
+            <h2>Fact about Cristiano Ronaldo</h2>
+            <div class="flex-container">
+                <ul>
+                    <li>Cristiano has scored over 800 goals in his career</li>
+                    <li>He reached 32.51 km/h in a match against West Ham in 2021</li>
+                    <li>When Ronaldo jumps, he generates 5 times the power of a cheetah</li>
+                </ul>
+                <figure>
+                    <img src="siu.png" alt="Bang Do siu celebration" />
+                    <figcaption>Bang Do <em>siuuuuu!!</em> Celebration</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="video">
+            <h2>SIUUUUUUUUU!!!</h2>
+            <div class="flex-container">
+                <iframe width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/A6O67uLJfcQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen
+                ></iframe>
+            </div>
+        </section>
+
+        <section id="form-section">
+            <h2>Join our Fan Club</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Personal Data</legend>
+                    <div>
+                        <label for="fullName">Full Name</label>
+                        <input id="fullName" type="text" required>                       
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" required>
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth</label>
+                        <input
+                          type="date"
+                          id="dob"
+                          name="trip-start"
+                          value="2023-07-20"
+                        />
+                      </div>
+
+                    <div>
+                        <p>Are you living in Indonesia?</p>
+                        <input type="radio" name="isIndonesia" id="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="isIndonesia" id="no">
+                        <label for="No">No</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div>
+                        <p>What do you think about Cristiano Ronaldo</p>
+                        <input type="checkbox" name="personality" id="bestplayer">
+                        <label for="bestplayer">Best Player</label>
+                        <input type="checkbox" name="personality" id="GOAT">
+                        <label for="GOAT">GOAT</label>
+                        <input type="checkbox" name="personality" id="better">
+                        <label for="better">Better than Messi</label>
+                    </div>
+                    <div>
+                        <p>Tell us why you love Cristiano Ronaldo!</p>
+                        <textarea rows="3"></textarea>
+                    </div>
+                    <div>
+                        <p>Upload your CR7 picture here</p>
+                        <input type="file" name="cr7photo" id="photo" accept="image/png, image/jpeg" required>
+                    </div>
+                </fieldset>
+                <button type="submit">submit</button>
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+  }
+  
+  section {
+    margin: 0 16px;
+  }
+  
+  section.full-screen {
+    margin: 0;
+  }
+  
+  nav {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 52px;
+    border-bottom: 2px solid #12111d;
+  }
+
+  .icon-img{
+    position: relative;
+  }
+  
+  nav > ul {
+    margin-left: auto;
+    margin-right: 16px;
+  }
+  
+  nav > ul > li {
+    display: inline-block;
+  }
+  
+  nav > span > img {
+    height: 32px;
+    width: auto;
+    padding: 8px;
+  }
+  
+  nav > span {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+
+  header{
+    text-align: center;
+    color: black;
+    background-color: darkblue;
+    display: flex;
+    height: 320px;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    background-image: url(siu2.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  header h1{
+    font-weight: bold;
+    text-shadow: 2px 2px;
+    animation-name: slidein;
+    animation-duration: 2s;
+    margin: 16px;
+  }
+
+  header p{
+    text-shadow: 1px 1px;
+    background-color: white;
+  }
+
+  nav .circle-red {
+    font-size: 8px;
+    background-color: red;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: -8px;
+  }
+
+  #bangdo-photos .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    grid-auto-rows: 240px 240px 240px;
+  }
+  
+  #bangdo-photos .grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .grid-container #item-1 {
+    grid-column: 1 / 2  span;
+    grid-row: 1;
+    grid-column: 2 / 3 span;
+  }
+
+  .grid-container #item-2 {
+    
+    grid-column: 2 / 3 span;
+  }
+
+  .grid-container #item-5 {
+    grid-column: 1 / 2  span;
+    grid-row: 2;
+  }
+  
+  .bangdo-photo-item:hover {
+    filter: grayscale(100%);
+    transition-property: filter;
+    transition-duration: 1s;
+  }
+
+  .bangdo-photo-item{
+    filter: none;
+    cursor: pointer;
+  }
+
+  
+
+  #bangdo-photos .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    grid-auto-rows: 320px 320px;
+  }
+
+  .grid-container #item-1 {
+    grid-column: 1;
+    grid-row: 1  span;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  #bangdo-fact .flex-container figure {
+    text-align: center;
+    
+    
+  }
+  
+  #bangdo-fact .flex-container img {
+    height: 400px;
+    width: auto;
+  }
+
+  #video .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  fieldset {
+    margin: 16px 0;
+    border-radius: 4px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 4px 4px;
+    margin: 8px 0;
+    display: block;
+  }
+  
+  #form-section {
+    background-color: darkblue;
+    color: white;
+    padding: 8px;
+    margin-top: 16px;
+  }
+  
+  #form-section form {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  @media only screen and (min-width: 768px) {
+    #bangdo-facts > .flex-container {
+      display: flex;
+      align-items: center;
+    }
+
+    #bangdo-fact > .flex-container figure{
+      margin-left: auto;
+    }
+
+    #bangdo-fact > .flex-container figure img{
+      height: 400px;
+    }
+
+    #bangdo-fact > .flex-container figcaption{
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    #bangdo-fact > .flex-container.row-reverse{
+      flex-direction: row-reverse;
+    }
+
+    #bangdo-fact > .flex-container.row-reverse p {
+      margin-left: 32px;
+    }
+
+    #bangdo-fact > .flex-container.row-reverse figure{
+      margin-left: 40px;
+      min-width: 320px;
+    }
+  }
+  nav > #dark-mode-switch {
+    display: flex;
+    margin-left: auto;
+    margin-right: 16px;
+  }
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+nav > #dark-mode-switch > p {
+  margin-right: 8px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+  
